@@ -3,7 +3,7 @@ abrir consola del navegador para ver matriz actual
 Ingrese numero para generar matriz cuadrada
 <input [formControl]="numberMatriz" type="number">
 <br>
-<button (click)="matrizRandom();">Generar matriz</button>
+<button [disabled]="numberMatriz.value <= 2" (click)="matrizRandom();">Generar matriz</button>
 <br>
 <button (click)="gatillo()">Ver cadena más larga</button>
 <br>
